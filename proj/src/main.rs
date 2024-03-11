@@ -33,7 +33,7 @@ fn main(){
     let floatNum = 42.1;
     println!("O n° real = {}", floatNum); */
 
-    //Boolean
+    /*Boolean
     fn teste_bool(){
         let bool_var: bool = false;
         if bool_var == true{
@@ -52,6 +52,16 @@ fn main(){
     numbers.0 = 50;
     println!("Numbers agora = {:?}", numbers);
     numbers = (4, 5, 6.2);
-    println!("Nova Tupla = {:?}\n", numbers);
+    println!("Nova Tupla = {:?}\n", numbers); */
+
+    //Array / Matriz
+    let mut numbers:[f64; 3] = [1.1, 2.5, 3.2];
+    println!("\nVetor[1]: {:?}", numbers[1]);
+    println!("\nVetor antes: {:?}", numbers);
+    numbers[0] = 1.2;
+    println!("Vetor depois: {:?}",numbers);
+    //Slice
+    println!("Slice ..2: {:?}", &numbers[..2]);
+    println!("Slice 1..: {:?}\n", &numbers[1..]);
 
 }
